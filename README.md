@@ -14,18 +14,18 @@
 
 ## 🎯 Sobre a Atividade
 
-Esta atividade teve como objetivo a criação de um portal de notícias de tecnologia chamado **TechNews Today**. O foco principal foi praticar a estruturação de páginas web com **HTML5** e a aplicação de estilos e efeitos visuais modernos utilizando apenas **CSS3 puro**, sem o uso de frameworks ou JavaScript.
+Esta atividade teve como objetivo a criação de um portal de notícias de tecnologia chamado **TechNews Today**. O foco principal foi praticar a estruturação de páginas web com **HTML5** e a aplicação de estilos e efeitos visuais modernos utilizando apenas **CSS3 puro**, sem o uso de JavaScript.
 
 ---
 
 ## 🚀 Objetivos Principais
 
-- Criar um layout responsivo utilizando **CSS Grid**.
-- Aplicar o efeito de vidro fosco (**Glassmorphism**) no cabeçalho.
-- Estilizar textos utilizando **efeito gradiente**.
+- Desenvolvimento de um layout responsivo utilizando **CSS Grid**.
+- Aplicação o efeito de vidro fosco (**Glassmorphism**) no cabeçalho.
+- Estilização de  textos utilizando **efeito gradiente**.
 - Tornar o cabeçalho fixo durante a rolagem com `position: sticky`.
 - Incorporar mídias (`<iframe>`) e caixas retráteis nativas (`<details>`).
-- Garantir a adaptação do site para telas de celular usando **Media Queries**.
+
 
 ---
 
@@ -34,7 +34,7 @@ Esta atividade teve como objetivo a criação de um portal de notícias de tecno
 - **HTML5**: Estruturação semântica da página (`desafio10a.html`).
 - **CSS3**: Estilização e layout responsivo (`desafio10a.css`).
 - **Visual Studio Code**: Editor de código utilizado para o desenvolvimento.
-- **Git & GitHub**: Versionamento de código e entrega da atividade.
+
 
 ---
 
@@ -43,3 +43,9 @@ Esta atividade teve como objetivo a criação de um portal de notícias de tecno
 ```text
 ├── desafio10a.html    # Estrutura e conteúdo do portal
 └── desafio10a.css     # Estilos e regras de layout
+-----------------------------------------------------------------------------------------------------------------------
+Como me auxiliou
+
+ A prática me permitiu ampliar o domínio do CSS3 puro ao organizar o layout com CSS Grid, além de me ensinar a aplicar efeitos visuais modernos muito cobrados no mercado, como o Glassmorphism e o gradiente em textos. Também aprimorei minha percepção sobre responsividade ao trabalhar com Media Queries para telas de celular e entendi o valor do HTML semântico ao explorar recursos nativos como a tag de texto retrátil, tornando o desenvolvimento mais eficiente.
+
+
