@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNews Today - Portal da Tecnologia</title>
+    <link rel="stylesheet" href="desafio10a.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <!-- class integra os elementos do css -->
+        <!-- Cabeçalho da página -->
+         <!--  Utiliza class, negrito e itálico -->
+         <h1 class="logo">TechNews Today</h1>
+         <p class="tagline"> As <strong>últimas novidades</strong> do mundo<em> tech</em></p>
+    </header>
+    
+<!-- Conteúdo principal da página -->
+    
+<main class="conteudo">
+    <!-- artigo independente em destaque -->
+     <article class="artigo-destaque">
+        <h2>🚀 IA Revoluciona Desenvolvimento</h2>
+        <!-- Data  -->
+        <time datetime="2026-10-06" class="data"> 06 de Outubro, 2026</time>
+        <p> Inteligência artificial está  transformando como criamos software....</p>
+
+
+        <!--  Details é uma Caixa recolhível nativa do HTML e Funciona sem
+JavaScript. Ela serve para exibir informações adicionais sobre um tema.-->
+
+<!-- Summary aparece como opção para clicar a caixa -->
+
+<!--  O p fica oculto até que o usuário clique em leia mais. -->
+<details class="leia-mais">
+    <summary>Leia mais</summary>
+    <p> ChatGPT e outras ferramentas estão mudando o cenário tech mundial.</p>
+</details>
+     </article>
+
+
+     <!-- Section vai agrupar artigos relacionados -->
+
+     <!-- Inframe coloca conteúdo externo dentro da página -->
+
+     <!--  width e height definem o tamanho do quadro -->
+      <section class="secao-video">
+        <h3>📺 Tech em Vídeo</h3>
+        <iframe class="video-embed" width="300" height="200" 
+    src="https://www.youtube.com/embed/eqUFcr1mI3Y"  
+    title=" Tech News Video"  >
+</iframe>
+
+ </section>
+<!-- agrupa uma nova secao de formulario-->
+<section class="secao-newsletter">
+ <h3> 📧 Newsletter</h3>
+
+ <!-- Envia os dados do formulário para o arquivo subscribe.php através do método POST -->
+ <form action="subscribe.php" method="post" class="form-newsletter">
+    <!-- Cria um campo de preenchimento obrigatório de e-mail -->
+    <label for="email">Email:</label>
+    <input type="email" id="email"name="email" required>
+    
+    <!-- Cria um campo de seleção para a área de interesse -->
+
+    <label for="interesse">Área de Interesse:</label>
+    <select id="interesse" name="interesse">
+        <option value="ia">Inteligência Artificial</option>
+        <option value="mobile">Desenvolvimento Mobile</option>
+        <option value="web">Tecnologias Web</option>
+
+    </select>
+
+    <!-- Cria um campo para aceitação dos termos -->
+    <div class="checkbox-container">
+        <input type="checkbox" id="aceito" name="aceito" required> 
+        <label for="aceito">Aceito os termos</label>
+        
+  </div>
+
+  <!--  Cria um botão de envio do formulário -->
+    <button type="submit" class="btn-inscrever"> Inscrever-se</button>
+
+ </form>
+</section>
+
+ </main>
+
+ <footer class="rodape">
+<!-- Footer serve para exibir informações no final da página. -->
+    <p>&copy; 2026 TechNews Today &bull; Todos os direitos reservados</p>
+
+    <!--  endereço de contato -->
+
+    <address>Contato: <a href="mailto: info@technews.com">info@technews.com</a></address>
+ </footer>
+</body>
+</html>

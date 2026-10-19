@@ -1,0 +1,204 @@
+/*
+Margin define a margem externa. 0 centraliza horizontalmente 
+
+Padding define a margem interna.
+
+Border-box garante que os valores de esoaçamento interno e borda fiquem dentro da largura*/
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    /* Body define o estilo em geral do documento
+    
+    Font-family define as fontes
+    
+    Background define a cor de fundo
+    
+    Color define a cor do texto
+    
+    line-height define o espaçamento entre linhas*/
+
+    
+ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI',  sans-serif;
+    background: #0a0e27;
+    color: #e4e4e7;
+    line-height: 1.6;
+}
+
+/*Header com glassmorphism (efeito de vidro)
+
+obs: todas as tags são sem acento*/
+
+.cabecalho {
+    background: linear-gradient(135deg, rgba(99,102, 241, 0.1), rgba(219,39,119,0.1));
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba (255,255, 255,0.1);
+    padding: 30px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    /*backdrop cria o efeito de vidro e o blor desfoca o fundo em 10 vezes*/
+    /*border-bottom faz a borda solida com transparencia do cabecalho*/
+    /*padding define o espaçamento interno*/
+    /*text-align alinha o texto no centro*/
+    /*sticky faz com que o elemento fique fixo no topo da tela*/
+    /*z-index define a ordem de sobreposição*/
+
+}
+
+.logo {
+    font-size: 36px;
+    background: linear-gradient(90deg, #6366f1 ,#db2777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* gradiente é um degrade de cores, de roxo para lilás*/
+    /*webkits são usados para exibir o efeito de gradiente no texto*/
+    /*back-ground-clip estipula o degradê no texto*/
+
+}
+.tagline {
+    color: #94a3b8;
+    margin-top: 10px;
+    /*margin-top define a margem superior*/
+
+}
+
+/* Layout principal com Grid*/
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    /*grid é um layout de linhas e colunas, o template-columns define o espaço que cada coluna vai ocupar, gap é o espaçamento entre as colunas, max-width define a largura máxima do conteúdo, a margin centrliza o conteúdo e o padding coloca o espaçamento interno*/
+}
+
+/* artigo com card moderno*/
+.artigo-destaque {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s;
+
+    /* border-radius arredonda o card
+    transition define os segundos de 0.3 para fazer a alteração*/
+}
+
+.artigo-destaque:hover {
+    transform: translateY(-5px);
+
+}
+
+.artigo-destaque h2 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+.data {
+    color: #64748b;
+    font-size: 14px;
+    /*font-size é o tamanho do texto*/
+    
+
+}
+
+.leia-mais {
+    margin-top: 15px;
+    cursor: pointer;
+    /*margin-top define a distância transparente acima do leia mais
+    cursor transforma o cursos na mãozinha com dedo apontadoao passar por cima do link do leia mais*/
+
+}
+
+.leia-mais summary {
+    color: #f59e0b;
+    font-weight: bold;
+    /* font-weight coloca o texto em negrito*/
+}
+
+/* Seção de vídeo*/
+.secao-video {
+    text-align: center;
+    /*alinha o texto no centro*/
+}
+
+.video-embed {
+    border-radius: 15px;
+    border: 2px solid #6366f1;
+    margin-top: 15px;
+
+    /*border-radius arredonda o vídeo
+    border define a cor e o formato da borda
+    margin-top define a distância transparencia */
+}
+
+/* Newaletter com gradiente */
+.secao-newsletter {
+    background:linear-gradient(135deg, #6366f1, #8b5cf6);
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+.form-newsletter input,
+.form-newsletter select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+}
+.checkbox-container {
+    margin: 15px 0;
+}
+
+.btn-inscrever {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #f59e0b, #ef4444);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    /*já comentado anteriormente*/
+}
+
+.btn-inscrever:hover {
+    transform: scale(1.05);
+    /*aumenta e diminui o tamanho do visual sem alterar o layout*/
+}
+
+/*Footer minimalista*/
+.rodape {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid  rgba(255, 255, 255, 0.1);
+    color: #64748b;
+}
+
+.rodape a {
+    color: #60a5fa;
+}
+/*Responsividade*/
+@media (min-width: 768px) {
+    .conteudo {
+        grid-template-columns: 2fr 1fr;
+
+    }
+    .artigo-destaque {
+        grid-column: span 2;
+    }
+}
